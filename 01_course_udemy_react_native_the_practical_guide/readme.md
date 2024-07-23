@@ -13,6 +13,6 @@ npm -v v10.7.0
 
 npx create-expo-app --template blank 01_course_udemy_react_native_the_practical_guide
 
-Course done up to class 07
+Course done up to class 23
 
 Graciously,

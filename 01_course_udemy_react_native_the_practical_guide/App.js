@@ -1,14 +1,21 @@
 // import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, ScrollView, FlatList } from 'react-native';
 
 export default function App() {
+  const [enteredGoalText, setEnteredGoalText] = useState('');
+  const [courseGoals, setCourseGoals] = useState([]);
+
   function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
   };
-  const [enteredGoalText, setEnteredGoalText] = useState('');
+
   function addGoalHandler() {
     console.log(enteredGoalText);
+    setCourseGoals(currentCourseGoals => [
+      ...currentCourseGoals,
+    {text: enteredGoalText, key: Math.random().toString()},
+    ]);
   };
 
   return (
@@ -28,11 +35,41 @@ export default function App() {
         />
         <Button title='Add Goal' onPress={addGoalHandler} />
       </View>
-      <View style={styles.goalsContainer}>
-        <Text>List of goals...</Text>
-      </View>
-    </View>
 
+      {/* Up to class 23 */}
+      {/* <View style={styles.goalsContainer}> */}
+      {/* <Text>List of goals...</Text> */}
+      {/* {courseGoals.map((goal) => <Text style={styles.goalItem} key={goal}>{goal}</Text>  )} */}
+      {/* </View> */}
+      {/* Up to class 26 */}
+      {/* <View style={styles.goalsContainer}>
+        <ScrollView alwaysBounceVertical={false}>
+          {courseGoals.map((goal) => (
+            <View key={goal} style={styles.goalItem}>
+              <Text style={styles.goalText}>{goal}</Text>
+            </View>
+          ))}
+        </ScrollView>
+      </View> */}
+      {/* Up to class 27 */}
+      <View style={styles.goalsContainer}>
+        <FlatList
+          data={courseGoals}
+          renderItem={itemData => {
+            itemData.index
+            return (
+              <View style={styles.goalItem}>
+                <Text style={styles.goalText}>{itemData.item.text}</Text>
+              </View>
+            )
+          }}
+          keyExtractor={(item, index) => {
+            return item.key;
+          }}
+          alwaysBounceVertical={false} />
+      </View>
+
+    </View >
   );
 }
 
@@ -75,5 +112,14 @@ const styles = StyleSheet.create({
   },
   goalsContainer: {
     flex: 5
+  },
+  goalItem: {
+    margin: 8,
+    padding: 8,
+    borderRadius: 6,
+    backgroundColor: '#5e0acc',
+  },
+  goalText: {
+    color: 'white'
   }
 });

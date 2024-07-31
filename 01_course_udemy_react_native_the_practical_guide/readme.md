@@ -8,11 +8,19 @@ I recommend the course “React Native - The Practical Guide [2024]” by Maximi
 
 ### System Requirements to run service
 
-node -v v20.15.1 (Present LTS)
-npm -v v10.7.0
+Requirements:
+	node -v v20.15.1 (Present LTS)
+	npm -v v10.7.0
+	expo go on Android device
+
+Terminal commands to run service:
+	npm install
+	npm start
+	capture generated QRCode
+
+# Course Enrollment
+	Course done up to class 27
 
 npx create-expo-app --template blank 01_course_udemy_react_native_the_practical_guide
-
-Course done up to class 23
 
 Graciously,

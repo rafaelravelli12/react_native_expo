@@ -15,8 +15,7 @@ Requirements:
 
 Terminal commands to run service:
 	npm install
-	npm start
-	capture generated QRCode
+	npm start --reset-cache
 
 # Course Enrollment
 	Course done up to class 27

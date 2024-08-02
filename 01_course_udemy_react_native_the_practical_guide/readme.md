@@ -2,24 +2,28 @@
 
 ### Estimeed Sirs,
 
-I recommend the course “React Native - The Practical Guide [2024]” by Maximilian Schwarzmüller.
+	I recommend the course “React Native - The Practical Guide [2024]” by Maximilian Schwarzmüller.
 
-[Course path](https://www.udemy.com/course/react-native-the-practical-guide/learn/lecture/16667702#overview) (acessed EN_07/23/2024).
+	[Course path](https://www.udemy.com/course/react-native-the-practical-guide/learn/lecture/16667702#overview) (acessed EN_07/23/2024)
 
-### System Requirements to run service
+	[Course Github Repository](https://github.com/academind/react-native-practical-guide-code/tree/01-getting-started) (acessed EN_08/02/2024)
 
-Requirements:
-	node -v v20.15.1 (Present LTS)
-	npm -v v10.7.0
-	expo go on Android device
+### System Requirements to run course project
 
-Terminal commands to run service:
-	npm install
-	npm start --reset-cache
+	Requirements:
+		node -v v20.15.1 (Present LTS)
+		npm -v v10.7.0
+		expo go on Android device
 
-# Course Enrollment
-	Course done up to class 27
+	Terminal commands to run service:
+		npm install
+		npm start --reset-cache
 
-npx create-expo-app --template blank 01_course_udemy_react_native_the_practical_guide
+	Terminal commands to start a blank project:
+		npx create-expo-app --template blank project_name
+
+### Course Enrollment
+	Course started day EN_07/23/2024
+	Course in progress done up to class 39
 
 Graciously,

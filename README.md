@@ -1,4 +1,4 @@
-# Projects React Native Expo
+# React Native Expo
 
 ### Estimeed Sirs,
 

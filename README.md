@@ -1,4 +1,4 @@
-<img src="expo_logo.png" alt="Alt text" width="300" />
+<img src="expo_logo.png" width="300" />
 
 ![GitHub commits](https://img.shields.io/github/commit-activity/m/rafaelravelli12/react_native_expo)
 

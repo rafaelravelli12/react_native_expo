@@ -25,6 +25,6 @@ Terminal commands to start a blank project:
 ### Course Enrollment
 
 Course started day EN_07/23/2024
-Course in progress done up to class 39
+Course in progress done up to class 46
 
 ### Graciously,

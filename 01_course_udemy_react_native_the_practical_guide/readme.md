@@ -15,11 +15,11 @@ Requirements:
 	npm -v v10.7.0
 	expo go on Android device
 
-Terminal commands to run service:
+Default terminal commands to run service:
 	npm install
 	npm start --reset-cache
 
-Terminal commands to start a blank project:
+Default terminal commands to start a blank project:
 	npx create-expo-app --template blank project_name
 
 ### Course Enrollment
